@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -10,6 +10,26 @@
 	<link rel="stylesheet" href="libs/animate/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+		$(document).ready(function () {
+			/* ==== zoom slider ===== */
+			if ($(window).width() < 1920 && $(window).width() > 1190) {
+				for (let i = 0; i < 1000; i++) {
+					$('.header__slider-wrapper').animate({
+							'backgroundSize': '125%'
+						},
+						16000).animate({
+						'backgroundSize': '115%'
+					}, 16000);
+				}
+			} else if ($(window).width() < 1190 &&
+				$(window).width() > 240) {
+				$('.header__slider-wrapper').css({
+					'backgroundSize': 'cover',
+				})
+			}
+		});
+	</script>
 
 </head>
 
