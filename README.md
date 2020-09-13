@@ -1,3 +1,3 @@
 # landing page "Partnertaxi"
 
-> html, scss, jquery
+> html, css(plagin: animate) scss, jquery + jquery(plagins: wow.js, slick-slider, jquery.mafnific-popup)
