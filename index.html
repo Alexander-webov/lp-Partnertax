@@ -1,39 +1,21 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<title>Partnertaxi</title>
+
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/animate/animate.min.css">
+	<link rel="stylesheet" href="libs/pop-up/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script>
-		$(document).ready(function () {
-			/* ==== zoom slider ===== */
-			if ($(window).width() < 1920 && $(window).width() > 1190) {
-				for (let i = 0; i < 1000; i++) {
-					$('.header__slider-wrapper').animate({
-							'backgroundSize': '125%'
-						},
-						16000).animate({
-						'backgroundSize': '115%'
-					}, 16000);
-				}
-			} else if ($(window).width() < 1190 &&
-				$(window).width() > 240) {
-				$('.header__slider-wrapper').css({
-					'backgroundSize': 'cover',
-				})
-			}
-		});
-	</script>
 
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
 		<div class="header__menu">
 			<div class="container">
@@ -46,9 +28,9 @@
 						<div class="header__menu-lang">
 							<span class="lang-active">Русский <img src="images/arrow-down-lang.svg" alt=""></span>
 							<ul class="header__menu-lang-list hidden">
-								<li class="lang-po"><a href="polindex.html">Polskie</a></li>
+								<li class="lang-uk"><a href="ukrindex.html">Українська</a></li>
+								<li class="lang-po"><a href="polindex.html">Polski</a></li>
 								<li class="lang-en"><a href="engindex.html">English</a></li>
-								<li class="lang-uk"><a href="ukrindex.html">Український</a></li>
 							</ul>
 						</div>
 
@@ -81,8 +63,9 @@
 							</a>
 						</div>
 						<div class="wow header__menu-btn animate__animated animate__zoomInRight " data-wow-delay="0.1s">
-							<a href="https://partnertaxi.pl" class="btn  mob-hidden">Портал водителя</a>
-							<a href="https://partnertaxi.pl" class="  mob-show"><img src="images/btn-mob.svg" alt=""></a>
+							<a href="https://partnertaxi.pl" class="btn  mob-hidden" target="_blank">Портал водителя</a>
+							<a href="https://partnertaxi.pl" class="  mob-show" target="_blank"><img src="images/btn-mob.svg"
+									alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -108,13 +91,14 @@
 								С нами Вы сможете пройти процесс лицензирования и работать легально!
 							</div>
 							<div class="header__content-btn">
-								<a href="#feedback" class="btn">Подробнее</a>
+								<a href="#modal" class="btn btn-modal">Подробнее</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__slider-wrapper slide-img-2 " style="background-image: url('images/slider-header-bg2.webp');">
+			<div class=" header__slider-wrapper slide-img-2 "
+				style=" background-image: url('images/slider-header-bg2.webp');">
 				<div class="header__slider-item">
 
 
@@ -134,13 +118,14 @@
 								Работать в современном сервисе доставки еды – просто!
 							</div>
 							<div class="header__content-btn">
-								<a href="#feedback" class="btn">Подробнее</a>
+								<a href="#modal" class="btn btn-modal">Подробнее</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__slider-wrapper slide-img-3 " style="background-image: url('images/slider-header-bg3.webp');">
+			<div class=" header__slider-wrapper slide-img-3 "
+				style=" background-image: url('images/slider-header-bg3.webp');">
 				<div class="header__slider-item">
 
 
@@ -156,9 +141,10 @@
 								Самый известный сервис курьерской доставки в Европе.
 								Выбирай сам, где и когда работать, какие заказы принимать.
 								Наслаждайся полной свободой и зарабатывай 8000 PLN\мес.
+
 							</div>
 							<div class="header__content-btn">
-								<a href="#feedback" class="btn">Подробнее</a>
+								<a href="#modal" class="btn btn-modal">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -167,7 +153,7 @@
 
 		</div>
 		<div class="social">
-			<a class="social-teleg" href="https://t.me/uber_bolt_pl">
+			<a class="social-teleg" href="https://t.me/uber_bolt_pl" target="_blank">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.22" height="24.969"
 					viewBox="0 0 27.22 24.969">
 					<defs>
@@ -191,7 +177,7 @@
 				</svg>
 
 			</a>
-			<a class="social-fb" href="https://www.facebook.com/uberboltpl">
+			<a class="social-fb" href="https://www.facebook.com/uberboltpl" target="_blank">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.53" height="26.687"
 					viewBox="0 0 14.53 26.687">
 					<defs>
@@ -215,7 +201,7 @@
 				</svg>
 
 			</a>
-			<a class="social-vk" href="https://vk.com/eternis_pl">
+			<a class="social-vk" href="https://vk.com/eternis_pl" target="_blank">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.75" height="17.5"
 					viewBox="0 0 26.75 17.5">
 					<defs>
@@ -239,7 +225,7 @@
 				</svg>
 
 			</a>
-			<a class="social-insta" href="https://www.instagram.com/partnertaxipl/">
+			<a class="social-insta" href="https://www.instagram.com/partnertaxipl/" target="_blank">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.59" height="24.937"
 					viewBox="0 0 25.59 24.937">
 					<defs>
@@ -449,7 +435,7 @@
 		<div class="feedback-form">
 			<form action="mail.php">
 				<input type="hidden" name="project_name" value="Partnertaxi">
-				<input type="hidden" name="admin_email" value="serhii@eternis.pl">
+				<input type="hidden" name="admin_email" value="test90@gmail.com">
 				<input type="hidden" name="form_subject" value="Новая заявка!">
 
 				<input class="feedback-form-name" name="Name" type="text" placeholder="Введите ваше имя" required>
@@ -481,52 +467,51 @@
 		</div>
 	</section>
 
-	<footer class="footer wow animate__animated animate__pulse" data-wow-offset="100">
-		<div class="container">
-			<div class="footer__menu footer__menu">
-				<div class="container">
-					<div class="footer__menu-wrapper">
-						<div class="footer__menu-logо">
-							<a href="#"><img class="logo wow animate__animated animate__zoomInLeft" data-wow-delay="0.1s"
-									src=" images/Logo.webp" alt=""></a>
-						</div>
-						<div class="footer__menu-link">
-							<div class="footer__menu-phone header__menu-phone">
+	<footer class="footer >
+		<div class=" container">
+		<div class="footer__menu footer__menu">
+			<div class="container">
+				<div class="footer__menu-wrapper">
+					<div class="footer__menu-logо">
+						<a href="#"><img class="logo wow animate__animated animate__zoomInLeft" data-wow-delay="0.1s"
+								src=" images/Logo.webp" alt=""></a>
+					</div>
+					<div class="footer__menu-link">
+						<div class="footer__menu-phone header__menu-phone">
 
-								<a href="tel:+48501870855">
-									<span> <svg class="svg-hover-white " xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" width="28.09" height="29.031"
-											viewBox="0 0 28.09 29.031">
-											<defs>
-												<style>
-													.cls-1 {
-														fill: #fff;
-														fill-rule: evenodd;
-													}
-												</style>
-												<filter id="filter2" x="1173.91" y="64.969" width="28.09" height="29.031"
-													filterUnits="userSpaceOnUse">
-													<feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha" />
-													<feGaussianBlur result="blur" stdDeviation="1" />
-													<feFlood result="flood" flood-color="#000001" flood-opacity="0.2" />
-													<feComposite result="composite" operator="in" in2="blur" />
-													<feBlend result="blend" in="SourceGraphic" in2="blur" />
-												</filter>
-											</defs>
-											<path id="phone1" class="cls-1"
-												d="M1173.92,72.821a8.806,8.806,0,0,1,.67-3.362,7.528,7.528,0,0,1,1.94-2.73c0.51-.454,1.03-0.892,1.56-1.327a1.922,1.922,0,0,1,.9-0.423,1.557,1.557,0,0,1,1.06.2,3.74,3.74,0,0,1,1.05.932,15.21,15.21,0,0,1,1.1,1.615,12.771,12.771,0,0,1,.88,1.5,4.4,4.4,0,0,1,.45,1.457,2.3,2.3,0,0,1-.6,1.876c-0.28.3-.6,0.553-0.9,0.833a9.353,9.353,0,0,1-.94.726,1.944,1.944,0,0,0-.81,1.106,2.389,2.389,0,0,0,.01,1.188,5.839,5.839,0,0,0,.62,1.5,16.136,16.136,0,0,0,1.68,2.361,22.942,22.942,0,0,0,1.86,2.012,9.03,9.03,0,0,0,1.97,1.484,3.107,3.107,0,0,0,1.27.4,1.856,1.856,0,0,0,1.39-.493,1.813,1.813,0,0,0,.25-0.243,10.087,10.087,0,0,1,1.15-1.073,4.245,4.245,0,0,1,.71-0.545,2.386,2.386,0,0,1,1.99-.19,4.932,4.932,0,0,1,1.55.843c0.55,0.444,1.1.911,1.64,1.372a7.865,7.865,0,0,1,1.07,1.072,3.113,3.113,0,0,1,.55.936,1.528,1.528,0,0,1-.29,1.583,7.9,7.9,0,0,1-.62.612c-0.37.337-.74,0.674-1.12,1a7.541,7.541,0,0,1-2.64,1.449,8.157,8.157,0,0,1-2.83.374,10.269,10.269,0,0,1-3.69-.879,15.947,15.947,0,0,1-3.38-2.025,26.986,26.986,0,0,1-3.62-3.384,32.492,32.492,0,0,1-3.14-4.014,19.437,19.437,0,0,1-1.72-3.192,12.661,12.661,0,0,1-.89-3.069c-0.02-.134-0.04-0.269-0.05-0.4C1173.97,73.542,1173.94,73.182,1173.92,72.821Z"
-												transform="translate(-1173.91 -64.969)" />
-										</svg></span>
-									+ 48 501 870 855
-								</a>
-							</div>
-							<div class="footer__menu-btn wow animate__animated animate__zoomInRight" data-wow-offset="100">
-								<a href="https://partnertaxi.pl/" class="btn lang">Портал водителя</a>
-							</div>
+							<a href="tel:+48501870855">
+								<span> <svg class="svg-hover-white " xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" width="28.09" height="29.031" viewBox="0 0 28.09 29.031">
+										<defs>
+											<style>
+												.cls-1 {
+													fill: #fff;
+													fill-rule: evenodd;
+												}
+											</style>
+											<filter id="filter2" x="1173.91" y="64.969" width="28.09" height="29.031"
+												filterUnits="userSpaceOnUse">
+												<feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha" />
+												<feGaussianBlur result="blur" stdDeviation="1" />
+												<feFlood result="flood" flood-color="#000001" flood-opacity="0.2" />
+												<feComposite result="composite" operator="in" in2="blur" />
+												<feBlend result="blend" in="SourceGraphic" in2="blur" />
+											</filter>
+										</defs>
+										<path id="phone1" class="cls-1"
+											d="M1173.92,72.821a8.806,8.806,0,0,1,.67-3.362,7.528,7.528,0,0,1,1.94-2.73c0.51-.454,1.03-0.892,1.56-1.327a1.922,1.922,0,0,1,.9-0.423,1.557,1.557,0,0,1,1.06.2,3.74,3.74,0,0,1,1.05.932,15.21,15.21,0,0,1,1.1,1.615,12.771,12.771,0,0,1,.88,1.5,4.4,4.4,0,0,1,.45,1.457,2.3,2.3,0,0,1-.6,1.876c-0.28.3-.6,0.553-0.9,0.833a9.353,9.353,0,0,1-.94.726,1.944,1.944,0,0,0-.81,1.106,2.389,2.389,0,0,0,.01,1.188,5.839,5.839,0,0,0,.62,1.5,16.136,16.136,0,0,0,1.68,2.361,22.942,22.942,0,0,0,1.86,2.012,9.03,9.03,0,0,0,1.97,1.484,3.107,3.107,0,0,0,1.27.4,1.856,1.856,0,0,0,1.39-.493,1.813,1.813,0,0,0,.25-0.243,10.087,10.087,0,0,1,1.15-1.073,4.245,4.245,0,0,1,.71-0.545,2.386,2.386,0,0,1,1.99-.19,4.932,4.932,0,0,1,1.55.843c0.55,0.444,1.1.911,1.64,1.372a7.865,7.865,0,0,1,1.07,1.072,3.113,3.113,0,0,1,.55.936,1.528,1.528,0,0,1-.29,1.583,7.9,7.9,0,0,1-.62.612c-0.37.337-.74,0.674-1.12,1a7.541,7.541,0,0,1-2.64,1.449,8.157,8.157,0,0,1-2.83.374,10.269,10.269,0,0,1-3.69-.879,15.947,15.947,0,0,1-3.38-2.025,26.986,26.986,0,0,1-3.62-3.384,32.492,32.492,0,0,1-3.14-4.014,19.437,19.437,0,0,1-1.72-3.192,12.661,12.661,0,0,1-.89-3.069c-0.02-.134-0.04-0.269-0.05-0.4C1173.97,73.542,1173.94,73.182,1173.92,72.821Z"
+											transform="translate(-1173.91 -64.969)" />
+									</svg></span>
+								+ 48 501 870 855
+							</a>
+						</div>
+						<div class="footer__menu-btn wow animate__animated animate__zoomInRight" data-wow-offset="100">
+							<a href="https://partnertaxi.pl/" class="btn lang">Портал водителя</a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 
 		<div class="footer__copy-wrapper">
@@ -545,36 +530,36 @@
 
 		</div>
 	</footer>
+	<div class="hidden">
+		<div id="modal" class="header-modal">
+			<div class="feedback-title">
+				<h3>Зарабатывайте с нами</h3>
+			</div>
+			<div class="feedback-subtitle">
+				Свяжитесь с нами и начните зарабатывать уже сегодня!
+			</div>
+			<div class="feedback-form">
+				<form name="contact" method="post" action="mail.php">
+					<input type="hidden" name="project_name" value="Partnertaxi">
+					<input type="hidden" name="admin_email" value="test90@gmail.com">
+					<input type="hidden" name="form_subject" value="Новая заявка!">
 
-
-
-
+					<input class="feedback-form-name" name="Name" type="text" placeholder="Введите ваше имя" required>
+					<input class="feedback-form-phone" name="Phone" type="tel" placeholder="Введите номер телефона" required>
+					<input class="feedback-form-email" name="E-mail" type="email" placeholder="Введите e-mail" required>
+					<input class="feedback-form-btn modal-btn" id="f_send" type="submit">
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<script src="libs/jquery/jquery-3.5.1.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="libs/wow.js/wow.min.js"></script>
+	<script src="libs/pop-up/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="script.js"></script>
-	<script>
-		$(document).ready(function () {
-			/* ==== zoom slider ===== */
-			if ($(window).width() < 1920 && $(window).width() > 1190) {
-				for (let i = 0; i < 1000; i++) {
-					$('.header__slider-wrapper').animate({
-							'backgroundSize': '125%'
-						},
-						16000).animate({
-						'backgroundSize': '115%'
-					}, 16000);
-				}
-			} else if ($(window).width() < 1190 &&
-				$(window).width() > 240) {
-				$('.header__slider-wrapper').css({
-					'backgroundSize': 'cover',
-				})
-			}
-		});
-	</script>
+
 </body>
 
 </html>

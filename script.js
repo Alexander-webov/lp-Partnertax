@@ -1,15 +1,16 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 	//E-mail Ajax Send
-	$("form").submit(function() { //Change
+	$("form").submit(function () { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
+		}).done(function () {
+			alert("Спасибо за обращение! Мы свяжемся в Вами в ближайшее время.");
+			$.magnificPopup.close();
+			setTimeout(function () {
 				// Done Functions
 				th.trigger("reset");
 			}, 1000);
